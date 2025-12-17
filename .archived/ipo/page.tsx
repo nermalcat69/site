@@ -29,7 +29,7 @@ export default function Home() {
         <label className="block mt-8 mb-8">
           March 22, 2021 by{" "}
           <Link href="/">
-            <u>Sahil Lavingia</u>
+            <u>Arjun Aditya</u>
           </Link>
         </label>
 

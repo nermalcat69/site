@@ -1,11 +1,1 @@
-To setup:
-
-```
-npm i next
-```
-
-To run:
-
-```
-npm run dev
-```
+forked from [sahil lavingia](https://sahillavingia.com)'s website

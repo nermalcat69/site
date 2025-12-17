@@ -27,7 +27,7 @@ export default function Home() {
       <label className="block mt-8 mb-8">
         October 17, 2024 by{" "}
         <Link href="/">
-          <u>Sahil Lavingia</u>
+          <u>Arjun Aditya</u>
         </Link>
       </label>
 
