@@ -87,13 +87,7 @@ export default function Home() {
         </header>
         <p className="mt-6 mb-4 text-sm sm:text-base leading-relaxed dark:text-neutral-300">
           I sell tea, matcha, and coffee on the internet involving as much as
-          software possible to make things seamless and sustainable.{" "}
-          <a
-            href="https://graycup.in/"
-            className="underline text-xs dark:text-neutral-300 italic"
-          >
-            Buy something from Gray Cup
-          </a>
+          software possible to make things seamless and sustainable.
         </p>
 
         <p className="mb-6 text-sm sm:text-base leading-relaxed dark:text-neutral-300">
