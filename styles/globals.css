@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply prose dark:prose-invert max-w-none dark:bg-black;
+    @apply dark:bg-black;
   }
 
   a {
