@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/course",
+      "destination": "https://minimalistentrepreneur.com/course"
+    },
+    {
+      "source": "/book",
+      "destination": "https://minimalistentrepreneur.com/book"
+    },
+    {
+      "source": "/video",
+      "destination": "https://calendly.com/sahil-lavingia/video"
+    },
+    {
+      "source": "/phone",
+      "destination": "https://calendly.com/sahil-lavingia/phone"
+    },
+    {
+      "source": "/class",
+      "destination": "https://calendly.com/sahil-lavingia/creator-class-hosted-by-sahil"
+    }
+  ]
+}
