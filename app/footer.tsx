@@ -14,7 +14,6 @@ export default function Footer() {
             type="email"
             placeholder="Email address"
             className="px-4 py-2 pr-24 rounded-full bg-white dark:bg-neutral-950 border border-gray-200 dark:border-neutral-800 text-gray-900 dark:text-gray-100 placeholder:text-gray-500 dark:placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-neutral-700"
-
           />
           <button
             type="submit"

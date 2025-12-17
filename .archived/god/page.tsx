@@ -34,27 +34,27 @@ export default function Home() {
       <h1>GOD Mode</h1>
 
       <p>
-         A few weeks ago, Paul Graham published{" "}
-         <a href="https://www.paulgraham.com/foundermode.html">Founder Mode</a>,
-         about a management style practiced by Brian Chesky at Airbnb that was at
-         least partially inspired by Steve Jobs.
-       </p>
+        A few weeks ago, Paul Graham published{" "}
+        <a href="https://www.paulgraham.com/foundermode.html">Founder Mode</a>,
+        about a management style practiced by Brian Chesky at Airbnb that was at
+        least partially inspired by Steve Jobs.
+      </p>
 
-       <p>
-         As Paul states in Founder Mode, "It seems to be working. Airbnb's free
-         cash flow margin is now among the best in Silicon Valley."
-       </p>
+      <p>
+        As Paul states in Founder Mode, "It seems to be working. Airbnb's free
+        cash flow margin is now among the best in Silicon Valley."
+      </p>
 
-       <p>
-         So, what is founder mode? The article rang true to me, but was
-         purposefully unspecific.
-       </p>
+      <p>
+        So, what is founder mode? The article rang true to me, but was
+        purposefully unspecific.
+      </p>
 
-       <p>
-         This is my attempt at proposing something more truthful by being more
-         specific: GOD mode.
-       </p>
-       
+      <p>
+        This is my attempt at proposing something more truthful by being more
+        specific: GOD mode.
+      </p>
+
       <h2>Growth, Optimization, Destruction</h2>
 
       <p>Every startup focuses on growth at its outset.</p>
@@ -183,7 +183,7 @@ export default function Home() {
       <p>Have co-founders, and–ideally–make yourselves equals.</p>
 
       <h2>Why, YC, why?</h2>
-      
+
       <p>
         YC states in{" "}
         <a href="https://www.youtube.com/watch?v=prKi3-rUPHc&t=27s">
@@ -273,7 +273,6 @@ export default function Home() {
       </p>
 
       <h2>Default Dead or Default Alive?</h2>
-
 
       <p>Dictators are not always benevolent.</p>
 

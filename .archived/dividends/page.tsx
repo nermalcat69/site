@@ -201,8 +201,14 @@ export default function Home() {
         </p>
 
         <p className="flex justify-between items-center">
-          <img src="/dividends/charter.jpeg" className="w-1/2 h-auto darkImage" />
-          <img src="/dividends/intelligent.jpeg" className="w-1/2 h-auto darkImage" />
+          <img
+            src="/dividends/charter.jpeg"
+            className="w-1/2 h-auto darkImage"
+          />
+          <img
+            src="/dividends/intelligent.jpeg"
+            className="w-1/2 h-auto darkImage"
+          />
         </p>
         <p>
           (I got 60% from The Intelligent Investor, a book recommended by Warren
@@ -304,7 +310,7 @@ export default function Home() {
         <div className="flex justify-center">
           <Tweet id="27946496473" />
         </div>
-        
+
         <p>
           Thirteen years later, Gumroad was a profitable business, and Flexile
           was handling our dividends. Why not add equity to the mix?
@@ -368,7 +374,10 @@ export default function Home() {
         </p>
         <p>For 2024, the average equity split is 18.3%.</p>
         <p>
-          <img src="/dividends/split.png" className="max-w-full my-4 mx-auto dark:invert dark:saturate-0" />
+          <img
+            src="/dividends/split.png"
+            className="max-w-full my-4 mx-auto dark:invert dark:saturate-0"
+          />
         </p>
         <p>
           The company saves money, the team owns more, the product improves, I

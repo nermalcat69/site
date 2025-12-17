@@ -5,7 +5,7 @@ import { ArrowRight, RefreshCw } from "lucide-react";
 
 export default function Component() {
   const [activeColor, setActiveColor] = useState<"black" | "white" | null>(
-    null
+    null,
   );
 
   const handleClick = (color: "black" | "white") => {

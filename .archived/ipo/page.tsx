@@ -37,13 +37,13 @@ export default function Home() {
 
         <p>Creators deserve to get paid for their work.</p>
         <p>
-          To date, <Link href="https://gumroad.com">Gumroad</Link> has made it easy by
-          enabling them to sell digital products, online courses, and
+          To date, <Link href="https://gumroad.com">Gumroad</Link> has made it
+          easy by enabling them to sell digital products, online courses, and
           memberships directly to their audiences. But earning an income isn't
           the only way to get paid.
         </p>
         <p>Owning equity in a business is another.</p>
-        
+
         <div className="flex justify-center">
           <Tweet id="1002103670400417792" />
         </div>
@@ -54,11 +54,12 @@ export default function Home() {
           The last time I tried to raise money, I failed. After meeting with
           dozens of investors and getting dozens of nos, we gave up on a Series
           B and had to either sell Gumroad, shut down, or get acquired. But in
-          spite of <Link href="/reflecting">"failing,"</Link> we were still helping
-          creators earn about $2 million a month to pay rent, top off their
-          children's college funds, or even just to buy a few cups of coffee.
-          Knowing that our platform made a big financial difference for our
-          customers impacted my priorities and how I decided to move forward.
+          spite of <Link href="/reflecting">"failing,"</Link> we were still
+          helping creators earn about $2 million a month to pay rent, top off
+          their children's college funds, or even just to buy a few cups of
+          coffee. Knowing that our platform made a big financial difference for
+          our customers impacted my priorities and how I decided to move
+          forward.
         </p>
         <p>
           Instead of selling or shutting down, I chose our creators over our
@@ -75,9 +76,9 @@ export default function Home() {
           In the years since I've often thought about how to make the interests
           of Gumroad's creators, employees, and investors align more cleanly.
           Recently I{" "}
-          <Link href="/work">hired a few of our top creators part-time</Link> to run
-          various parts of Gumroad. Letting them become investors was the next
-          logical step.
+          <Link href="/work">hired a few of our top creators part-time</Link> to
+          run various parts of Gumroad. Letting them become investors was the
+          next logical step.
         </p>
         <h2>Turning creators into owners</h2>
         <p>
@@ -209,8 +210,8 @@ export default function Home() {
           </li>
           <li>
             Send me and the team feedback via{" "}
-            <Link href="https://joinclubhouse.com/club/gumroad">Clubhouse</Link> and{" "}
-            <Link href="https://twitter.com/gumroad">Twitter</Link>
+            <Link href="https://joinclubhouse.com/club/gumroad">Clubhouse</Link>{" "}
+            and <Link href="https://twitter.com/gumroad">Twitter</Link>
           </li>
         </ul>
 
