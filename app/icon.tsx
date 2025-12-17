@@ -31,7 +31,7 @@ export default function Icon() {
         fontFamily: `${inter.style.fontFamily}, Helvetica Neue, Arial, sans-serif`,
       }}
     >
-      ツ
+      𐌀
     </div>,
     // ImageResponse options
     {

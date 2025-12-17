@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Painting from "./components/Painting";
 import { Button } from "./components/ui/button";
 import Image from "next/image";
 
