@@ -4,7 +4,7 @@ export const SubscribeForm = () => {
   return (
     <div className="subscribe">
       <div className="subscribe-content">
-        <div className="subscribe-header">
+        <div className="subscribe-header max-w-xs">
           <div>
             <h2>Buy Tea, Coffe and Matcha from Arjun</h2>
             <p>We sell directly to consumers as well as businesses.</p>
@@ -17,8 +17,8 @@ export const SubscribeForm = () => {
           className="nolink"
         >
           <svg
-            width="100"
-            height="100"
+            width="60"
+            height="60"
             className="-rotate-30 hover:-rotate-10 duration-300 ease-in-out"
             viewBox="0 0 362 349"
             fill="none"
