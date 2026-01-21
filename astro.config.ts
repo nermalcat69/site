@@ -80,6 +80,5 @@ export default defineConfig({
     "/projects/genderswap": "/posts/genderswap",
     "/projects/boundaries-map": "/posts/boundaries-map",
     "/projects/commonplace": "/posts/commonplace",
-    "/friends": "/webrings",
   },
 });
