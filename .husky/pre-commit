@@ -1,1 +1,5 @@
+pnpm update-dates
+git add -u "*.mdx"
+bunx biome format --write .
+git add -u
 pnpm check

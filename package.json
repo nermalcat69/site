@@ -17,7 +17,8 @@
     "format": "prettier --write .",
     "html-validate": "bun run build && bunx html-validate dist/*.html",
     "prepare": "husky",
-    "check-links": "lychee --config .lychee.toml ."
+    "check-links": "lychee --config .lychee.toml .",
+    "update-dates": "node scripts/update-mdx-dates.mjs"
   },
   "dependencies": {
     "@ascorbic/feed-loader": "^2.0.1",
