@@ -98,6 +98,7 @@
 
 .prose p + p {
   text-indent: 1.3em;
+  margin-top: var(--space-m);
 }
 
 .prose * + ul,
