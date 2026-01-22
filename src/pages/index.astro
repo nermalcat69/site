@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Center from "../components/Center.astro";
+import "../styles/global.css";
 import PhotoFeed from "../components/Home/PhotoFeed.astro";
 import WorkList from "../components/Home/WorkList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -36,10 +37,16 @@ const feed = work
     <Center>
       <h1 class="visuallyhidden">Eva designs and builds for the web</h1>
       <div class="intro">
-        <p>
+        <p class="pb-4">
           <strong><a href="/about">Arjun Aditya</a></strong> is a sustainable programmer / founder engineer who
           likes nature and designing. <br /><br />He Sells Tea, Coffee and Matcha at <a href="https://graycup.org" target="_blank" rel="dofollow">Gray Cup</a>.
         </p>
+<a
+  href="https://graycup.in/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="nolink"
+><button class="orangeshadow dark:bg-white dark:text-black nolink bg-black p-2 text-white inline-block rounded-lg">Visit Online Store</button></a>
       </div>
     </Center>
     <img src="/coffee.png" draggable="false" loading="eager" alt="Coffee Beans" style="width: " />
@@ -121,8 +128,7 @@ const feed = work
       line-height: var(--line-height-tight);
     }
 
-    a,
-    button {
+    a {
       background: unset;
       border: unset;
       margin: unset;
@@ -164,4 +170,5 @@ const feed = work
     font-size: var(--step-1);
     margin-block-end: var(--space-m);
   }
+  
 </style>

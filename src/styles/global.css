@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+.nolink {
+  text-decoration: none !important;
+  text-decoration-color: var(--gray-8);
+  text-underline-offset: max(0.1em, 2.5px);
+  transition:
+    text-decoration-color 0.2s ease-in-out,
+    font-weight 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+  .nolink:hover,
+  .nolink:focus {
+    text-decoration-color: var(--gray-11);
+    font-weight: var(--font-weight-normal);
+  }
+}
