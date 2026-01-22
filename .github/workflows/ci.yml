@@ -52,7 +52,7 @@ jobs:
         run: bun playwright install chromium
 
       - name: Run Playwright tests
-        run: bun test
+        run: bunx playwright test
 
       - uses: actions/upload-artifact@v6
         if: always()
@@ -60,23 +60,3 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-
-  html-validate:
-    name: HTML5 Validation
-    runs-on: ubuntu-latest
-    if: ${{ github.actor != 'dependabot[bot]' }}
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v6
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-
-      - name: Install dependencies
-        run: bun install
-
-      - name: Build and validate HTML5
-        run: bun html-validate

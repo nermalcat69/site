@@ -26,7 +26,13 @@ export default defineConfig({
     }),
     mdx(),
     sitemap(),
-    playformCompress(),
+    playformCompress({
+      Image: {
+        sharp: {
+          webp: true,
+        },
+      },
+    }),
   ],
   trailingSlash: "never",
   adapter: vercel(),
