@@ -1,14 +1,38 @@
 ---
+
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import WorkList from "src/components/Home/WorkList.astro";
 import coffeeImage from "../assets/coffee.png";
 import Center from "../components/Center.astro";
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const work = await getCollection("work");
+const posts = await getCollection("posts");
+
+const feed = work
+  .map((project) => ({
+    id: project.id,
+    ...project.data,
+  }))
+  .concat(
+    posts.map((post) => ({
+      id: `post-${post.id}`,
+      title: post.data.title,
+      description: post.data.description,
+      year: post.data.datePublished.getFullYear(),
+      url: `/posts/${post.id}`,
+      category: post.data.type === "case-study" ? "case study" : "writing",
+      img: post.data.img,
+    })),
+  )
+  .sort((a, b) => b.year - a.year);
 ---
 
 <BaseLayout
-  title="Arjun Aditya | Tea Seller, Designer & Economist"
-  description="Arjun is a designer and web developer based in India."
+  title="Arjun Aditya | Sustainable Founder"
+  description="Arjun is a designer and programmer based in India."
   includeFooter
 >
   <section class="home">
@@ -29,12 +53,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </Center>
     <Image src={coffeeImage} draggable="false" loading="eager" alt="Coffee Beans" format="webp" />
   </section>
-  <!-- <section>
+  <section>
     <Center>
       <h2>Projects</h2>
       <WorkList items={feed} />
     </Center>
-  </section> -->
+  </section>
   <!-- <section>
     <Center>
       <h2>Latest <a href="https://glass.photo/evadecker">photos</a></h2>
