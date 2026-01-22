@@ -3,7 +3,6 @@ import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import vercel from "@astrojs/vercel";
-import playformCompress from "@playform/compress";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
@@ -26,13 +25,6 @@ export default defineConfig({
     }),
     mdx(),
     sitemap(),
-    playformCompress({
-      Image: {
-        sharp: {
-          webp: true,
-        },
-      },
-    }),
   ],
   trailingSlash: "never",
   adapter: vercel(),

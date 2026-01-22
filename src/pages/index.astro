@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import coffeeImage from "../assets/coffee.png";
 import Center from "../components/Center.astro";
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -25,7 +27,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ><button class="orangeshadow dark:bg-white dark:text-black nolink bg-black p-2 text-white inline-block rounded-lg">Visit Online Store</button></a>
       </div>
     </Center>
-    <img src="/coffee.png" draggable="false" loading="eager" alt="Coffee Beans" style="width: " />
+    <Image src={coffeeImage} draggable="false" loading="eager" alt="Coffee Beans" format="webp" />
   </section>
   <!-- <section>
     <Center>

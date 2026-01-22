@@ -27,7 +27,6 @@
     "@astrojs/sitemap": "^3.6.1",
     "@astrojs/vercel": "^9.0.4",
     "@nanostores/react": "^1.0.0",
-    "@playform/compress": "^0.2.1",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
