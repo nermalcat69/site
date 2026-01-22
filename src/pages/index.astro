@@ -1,31 +1,7 @@
 ---
-import { getCollection } from "astro:content";
 import Center from "../components/Center.astro";
 import "../styles/global.css";
-import PhotoFeed from "../components/Home/PhotoFeed.astro";
-import WorkList from "../components/Home/WorkList.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const work = await getCollection("work");
-const posts = await getCollection("posts");
-
-const feed = work
-  .map((project) => ({
-    id: project.id,
-    ...project.data,
-  }))
-  .concat(
-    posts.map((post) => ({
-      id: `post-${post.id}`,
-      title: post.data.title,
-      description: post.data.description,
-      year: post.data.datePublished.getFullYear(),
-      url: `/posts/${post.id}`,
-      category: post.data.type === "case-study" ? "case study" : "writing",
-      img: post.data.img,
-    })),
-  )
-  .sort((a, b) => b.year - a.year);
 ---
 
 <BaseLayout
@@ -44,7 +20,7 @@ const feed = work
 <a
   href="https://graycup.in/"
   target="_blank"
-  rel="noopener noreferrer"
+  rel="dofollow"
   class="nolink"
 ><button class="orangeshadow dark:bg-white dark:text-black nolink bg-black p-2 text-white inline-block rounded-lg">Visit Online Store</button></a>
       </div>
