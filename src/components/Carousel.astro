@@ -1,0 +1,30 @@
+---
+interface Props {
+  spacing?: "tight" | "normal";
+}
+
+const { spacing = "normal" } = Astro.props;
+---
+
+<ul class:list={["carousel", { tight: spacing === "tight" }]}>
+  <slot />
+</ul>
+
+<style>
+  .carousel {
+    list-style: none;
+    display: flex;
+    gap: var(--space-l);
+    padding-inline: var(--space-xl);
+    padding-block: var(--space-2xs) var(--space-l);
+    margin: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: var(--space-xl);
+    scrollbar-width: thin;
+
+    &.tight {
+      gap: var(--space-xs);
+    }
+  }
+</style>

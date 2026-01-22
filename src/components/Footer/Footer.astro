@@ -1,0 +1,134 @@
+---
+import Center from "../Center.astro";
+import { SubscribeForm } from "../Subscribe/SubscribeForm";
+---
+
+<footer>
+  <Center>
+    <div class="content">
+      <div class="links">
+        <a href="https://archived.arjunaditya.xyz" target="_blank" data-fathom="footer-link">Archived Site</a>
+        <a href="https://instagram.com/arjun_sustains" target="_blank" data-fathom="footer-link">Instagram</a>
+        <a href="/rss.xml" data-fathom="footer-link">RSS</a>
+        <a href="/colophon" data-fathom="footer-link">Colophon</a>
+      </div>
+      <div class="links">
+        <a
+          href="https://hardcover.app/@arjunaditya"
+          target="_blank"
+          data-fathom="footer-link">Hardcover</a
+        >
+        <a
+          href="https://x.com/arjunaditya_"
+          target="_blank"
+          data-fathom="footer-link">Twitter</a
+        >
+        <a
+          href="https://github.com/nermalcat69"
+          target="_blank"
+          data-fathom="footer-link">GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/nermalcat69"
+          target="_blank"
+          data-fathom="footer-link">LinkedIn</a
+        >
+      </div>
+      <div class="banner">
+        <span class="emoji">🍊</span>
+        <p>Stay Hydrated</p>
+      </div>
+      <div class="subscribe">
+        <SubscribeForm />
+      </div>
+    </div>
+  </Center>
+</footer>
+
+<style>
+  footer {
+    font-size: var(--step-0);
+    padding-block: var(--space-2xl);
+    width: 100%;
+    border-top: 1px solid var(--gray-6);
+  }
+
+  .content {
+    display: grid;
+    grid-template: "links1 links2 form" 1fr "banner banner form" auto / 0.5fr 0.5fr 2fr;
+    gap: var(--space-m) var(--space-xl);
+
+    @media (width < 650px) {
+      grid-template: "form form" "links1 links2" "banner banner" / 1fr 1fr;
+      gap: var(--space-xl);
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column wrap;
+
+    --link-padding-block: 0.2em;
+
+    margin-block-start: calc(var(--link-padding-block) * -1);
+
+    @media (width < 650px) {
+      --link-padding-block: 0.4em;
+    }
+
+    a {
+      display: inline-block;
+      padding-block: var(--link-padding-block);
+    }
+
+    &:first-child {
+      grid-area: links1;
+    }
+
+    &:last-child {
+      grid-area: links2;
+    }
+  }
+
+  .banner {
+    grid-area: banner;
+    color: var(--gray-11);
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+
+    a {
+      text-decoration: none;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: var(--gray-12);
+        }
+      }
+    }
+
+    .emoji {
+      transform: scale(1.3) translateY(0.01em);
+    }
+  }
+
+  .subscribe {
+    grid-area: form;
+  }
+</style>
+
+<script>
+  import * as Fathom from "fathom-client";
+
+  document.addEventListener("astro:page-load", () => {
+    document
+      .querySelectorAll("[data-fathom='footer-link']")
+      .forEach((navlink) => {
+        navlink.addEventListener("click", () => {
+          const url = navlink.getAttribute("href");
+          Fathom.trackEvent(`nav: click link (${url})`);
+        });
+      });
+  });
+</script>

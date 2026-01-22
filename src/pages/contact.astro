@@ -1,0 +1,107 @@
+---
+import Center from "../components/Center.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Contact | Arjun Aditya"
+  description="Get in touch with Arjun Aditya for collaborations, business inquiries, or just to say hello."
+  includeFooter
+>
+  <section class="contact">
+    <Center>
+      <h1>Contact</h1>
+      <div class="intro">
+        <p>
+          Want to chat about tea, coffee, design, or anything else? Feel free to reach out.
+        </p>
+      </div>
+      <div class="contact-methods">
+                
+        <div class="method">
+            <h2>Schedule Zoom Meeting</h2>
+            <p class="pb-3">Make sure to write in depth about the agenda of the call & your introduction.</p>
+            <button type="button"
+            class="bg-neutral-200/70 dark:bg-neutral-800/70 border border-neutral-400 dark:border-neutral-600 px-3.5 py-1 active:bg-neutral-200 dark:active:bg-neutral-700 cursor-pointer"
+ onclick="window.location.href='https://cal.com/arjunaditya/30min?user=arjunaditya';">Book a Slot</button>
+        </div>
+        <div class="method">
+            <h2>Social Media</h2>
+            <p>Connect with Arjun on <a href="https://instagram.com/arjun_sustains" target="_blank" rel="noopener">Instagram</a>, <a href="https://x.com/arjunaditya_" target="_blank" rel="noopener">X (Twitter)</a> and <a href="https://linkedin.com/in/nermalcat69" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
+        <div class="method">
+          <h2>Email</h2>
+          <a href="mailto:arjunaditya@icloud.com">arjunaditya@icloud.com</a>
+        </div>
+        <div class="method">
+          <h2>Email(related to Gray Cup)</h2>
+          <a href="mailto:arjun@graycup.org">arjun@graycup.org</a>
+        </div>
+        <div class="method">
+          <h2>Business Inquiries</h2>
+          <p>For bulk orders and B2B partnerships at <a href="mailto:bulk@graycup.org">bulk@graycup.org</a>.<br /> visit <a href="https://b2b.graycup.in" target="_blank" rel="noopener">b2b.graycup.in</a></p>
+        </div>
+        <div class="method">
+          <h2>Shop</h2>
+          <p>Browse Gray Cup products at <a href="https://graycup.in" target="_blank" rel="noopener">graycup.in</a> and <a href="https://b2b.graycup.in" target="_blank" rel="noopener">b2b.graycup.in</a></p>
+        </div>
+      </div>
+    </Center>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact {
+    padding-block: var(--space-2xl);
+  }
+
+  h1 {
+    font-size: var(--step-4);
+    letter-spacing: var(--letter-spacing-condensed);
+    margin-block-end: var(--space-m);
+  }
+
+  .intro {
+    margin-block-end: var(--space-2xl);
+
+    p {
+      font-size: var(--step-1);
+      line-height: var(--line-height-tight);
+      text-wrap: balance;
+    }
+  }
+
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .method {
+    h2 {
+      font-size: var(--step-0);
+      margin-block-end: var(--space-xs);
+      color: var(--gray-11);
+    }
+
+    a,
+    p {
+      font-size: var(--step-1);
+      line-height: var(--line-height-normal);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: var(--gray-8);
+      text-underline-offset: max(0.1em, 2.5px);
+      transition: text-decoration-color 0.2s ease-in-out;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          text-decoration-color: var(--gray-11);
+        }
+      }
+    }
+  }
+</style>
