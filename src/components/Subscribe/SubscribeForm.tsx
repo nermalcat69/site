@@ -6,7 +6,7 @@ export const SubscribeForm = () => {
       <div className="subscribe-content">
         <div className="subscribe-header max-w-xs">
           <div>
-            <h2>Buy Tea, Coffe and Matcha from Arjun</h2>
+            <h2>Buy Tea, Coffe and Tech Solutions from Arjun</h2>
             <p>We sell directly to consumers as well as businesses.</p>
           </div>
         </div>
