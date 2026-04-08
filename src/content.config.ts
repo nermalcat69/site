@@ -90,10 +90,4 @@ export const collections = {
         date: z.date(),
       }),
   }),
-
-  photos: defineCollection({
-    loader: feedLoader({
-      url: "https://glass.photo/evadecker/rss",
-    }),
-  }),
 };
