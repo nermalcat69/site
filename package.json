@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "deploy": "astro build && wrangler deploy",
     "check": "astro check && biome check",
     "check:fix": "astro check && biome check --write",
     "stylelint": "bunx stylelint '**/*.{css,astro}'",
@@ -20,17 +21,16 @@
   "dependencies": {
     "@ascorbic/feed-loader": "^2.0.1",
     "@astrojs/check": "^0.9.6",
+    "@astrojs/cloudflare": "12.6.13",
     "@astrojs/markdown-remark": "^6.3.10",
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/react": "^4.4.2",
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.1",
-    "@astrojs/vercel": "^9.0.4",
     "@nanostores/react": "^1.0.0",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
-    "@vercel/analytics": "^1.6.1",
     "astro": "^5.16.8",
     "astro-expressive-code": "^0.41.5",
     "astro-loading-indicator": "^0.7.1",
@@ -65,7 +65,8 @@
     "stylelint": "^17.0.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard": "^40.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "wrangler": "^4.131.1"
   },
   "packageManager": "pnpm@10.28.1+sha512.7d7dbbca9e99447b7c3bf7a73286afaaf6be99251eb9498baefa7d406892f67b879adb3a1d7e687fc4ccc1a388c7175fbaae567a26ab44d1067b54fcb0d6a316"
 }

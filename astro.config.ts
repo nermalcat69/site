@@ -1,8 +1,8 @@
+import cloudflare from "@astrojs/cloudflare";
 import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import vercel from "@astrojs/vercel";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
@@ -27,7 +27,7 @@ export default defineConfig({
     sitemap(),
   ],
   trailingSlash: "never",
-  adapter: vercel(),
+  adapter: cloudflare(),
   markdown: {
     rehypePlugins: [rehypeHeadingIds, [rehypeAutolinkHeadings, autolinkConfig]],
     remarkPlugins: [imgAttr],
